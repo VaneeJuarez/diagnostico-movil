@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Imagen de producto">
+  <rect width="200" height="200" fill="#e9ecef"/>
+  <rect x="45" y="60" width="110" height="80" rx="8" fill="#adb5bd"/>
+  <circle cx="100" cy="100" r="22" fill="#6c757d"/>
+  <text x="100" y="175" font-family="system-ui, sans-serif" font-size="14"
+        fill="#6c757d" text-anchor="middle">Producto</text>
+</svg>
