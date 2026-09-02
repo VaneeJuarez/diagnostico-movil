@@ -79,10 +79,7 @@ function renderPaginacion() {
 
   if (lista.length === 0) { ul.innerHTML = ''; return; }
 
-  let html = `
-    <li class="page-item ${estado.pagina === 1 ? 'disabled' : ''}">
-      <a class="page-link" href="#" data-pagina="${estado.pagina - 1}" aria-label="Anterior">&laquo;</a>
-    </li>`;
+  let html = '';
 
   for (let i = 1; i <= paginas; i++) {
     html += `
@@ -90,11 +87,6 @@ function renderPaginacion() {
         <a class="page-link" href="#" data-pagina="${i}">${i}</a>
       </li>`;
   }
-
-  html += `
-    <li class="page-item ${estado.pagina === paginas ? 'disabled' : ''}">
-      <a class="page-link" href="#" data-pagina="${estado.pagina + 1}" aria-label="Siguiente">&raquo;</a>
-    </li>`;
 
   ul.innerHTML = html;
 }
